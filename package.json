@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "start": "^5.1.0",
-=======
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -38,7 +35,6 @@
     ]
   },
   "devDependencies": {
->>>>>>> c0d20d5e3e6bdf8f1139b4818acd03397e0a031a
     "web-vitals": "^4.2.4"
   }
 }

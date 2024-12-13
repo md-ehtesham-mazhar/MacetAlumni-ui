@@ -11,9 +11,11 @@ function Navbar({ hanleSignInClick }) {
         <div>
             <nav className="navbar">
                 <div className='nav-logo'>
-                    <img src={img1} alt="" width="50" />
+                    <a href='https://macet.ac.in/'>
+                    <img className='logoImg' src={img1} alt="" width="50" />
+                    </a>
                     <div className="logo">
-                        <Link className="navbar-brand" to="/">MACET</Link>
+                        <Link className="navbar-brand" to="https://macet.ac.in/">Maulana azad college of engineering & technology</Link>
                         <Link className="navbar-brand" t="/">Alumni</Link>
                     </div>
                 </div>

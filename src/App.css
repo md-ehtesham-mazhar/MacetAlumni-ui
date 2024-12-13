@@ -14,17 +14,23 @@
 .nav-logo{
   display: flex;
 }
+.logoImg{
+  width: 80px;
+  border-radius: 0 0 60px 60px;
+}
 .logo{
   position: relative;
   display: flex;
   flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 .navbar-brand{
   margin-left: 1rem;
   padding: 0px;
   font-weight: bolder;
-  color: rgba(73, 148, 70, 0.963);
-  text-decoration: underline dotted ;
+  color:#333;
+  text-decoration: none ;
 }
 .btn{
   background-color: rgba(17, 52, 129, 0.717);
