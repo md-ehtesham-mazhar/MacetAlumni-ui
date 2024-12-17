@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const SignIn = () => {
+const SignIn = ({onSignInSuccess}) => {
     const [fullName, setFullName] = useState('');
     const [registration, setRegistration] = useState('');
+    const navigate =useNavigate();
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -14,10 +15,15 @@ const SignIn = () => {
         }
     };
 
+    const handleSignIn = (e) =>{
+        e.preventDefault();
+        onSignInSuccess();
+        navigate('/homepage');
+    }
     return (
         <div className='signin-box'>
             <h2>Sign In</h2>
-            <form action="">
+            <form onSubmit={handleSignIn}>
                 <div className="mb-3">
                     <label htmlFor="fullNAme" className="form-label"></label>
                     <input
@@ -44,7 +50,7 @@ const SignIn = () => {
                         required
                     />
                 </div>
-                <Link to="/" className="btn w-100">Sign In</Link>
+                <Link to="/Homepage" className="btn w-100">Sign In</Link>
             </form>
 
         </div>
