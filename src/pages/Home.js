@@ -1,37 +1,60 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import SignIn from '../components/SignIn';
-
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route } from 'react-router-dom';
 import Footer from '../components/Footer';
-import Content from '../components/Content';
+// import Profile from '../components/Profile';
+//import Homepage from './Homepage';
+//import Content from '../components/Content';
+// import img2 from '../images/img2.jpg'
 
-function Home(){
+function Home() {
     // const[user, setUser] = useState(null);
 
-    const [showContent, setShowContent] = useState(true);
+    // const [showContent, setShowContent] = useState(true);
+    const [isSignedIn, setIsSignedIn] = useState(false);
+    
 
     const handleSignInClick = () => {
         console.log("Sign In button clicked");
-        setShowContent(false);
+        // setShowContent(false);
     }
-    
-return (
-    <Router>
-        <div className='home'>
-            <Navbar  hanleSignInClick={handleSignInClick}/>
+
+    const handleSignInSuccess = () => {
+        setIsSignedIn(true); // Update state after successful sign-in
+    }
+
+    return (
+            <div className='home'>
+                <Navbar isSignedIn={isSignedIn} handleSignInClick={handleSignInClick} />
+
+                <div className="container">
+                    {/* <img src={img2} alt=''/> */}
+                    <Routes>
+                        {!isSignedIn && (
+                            <Route exact path='/signin' element={<SignIn onSignInSuccess={handleSignInSuccess} />} />
+                        )}
+
+                        {isSignedIn && (
+                            // <Route exact path='/profile' element={<Profile />} />
+                            <>
+                                <Route exact path='/home' element={<h1>Home</h1>} />
+                                {/* <Route exact path='/content' element={isSignedIn ? <Homepage /> : <SignIn />} /> */}
+                                {/* <Route path="/home" element={<h1>Home</h1>} /> */}
+                                <Route path="/alumni" element={<h1>Alumni</h1>} />
+                                <Route path="/event" element={<h1>Event Page</h1>} />
+                                <Route path="/post" element={<h1>Post Page</h1>} />
+                                <Route path="/developer-info" element={<h1>Developer Info</h1>} />
+                            </>
+                        )}
+                    </Routes>
+                </div>
+                <div className="separation"></div>
+                {/* {showContent && <Content />} */}
+                <Footer />
+            </div>
         
-        <div className="container">
-            <Routes>
-                <Route exact path='/signin' element={<SignIn />} />
-            </Routes>
-        </div>
-        {showContent && <Content />}
-        <Footer />
-        </div>
-    </Router>
-);
+    );
 }
 
 export default Home;
