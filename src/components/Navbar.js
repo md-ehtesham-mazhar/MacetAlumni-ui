@@ -23,7 +23,7 @@ function Navbar({ isSignedIn, hanleSignInClick }) {
                     {isSignedIn && (
                         <div className="nav-elements">
                             <Link className="element" to="/home">Home</Link>
-                            <Link className="element" to="/content">Alumni</Link>
+                            <Link className="element" to="/Alumni">Alumni</Link>
                             <Link className="element" to="/event">Event</Link>
                             <Link className="element" to="/post">Post</Link>
                         </div>

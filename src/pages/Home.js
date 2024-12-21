@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import SignIn from '../components/SignIn';
 import {Routes, Route } from 'react-router-dom';
 import Footer from '../components/Footer';
+import Alumni from './Alumni';
 // import Profile from '../components/Profile';
 //import Homepage from './Homepage';
 //import Content from '../components/Content';
@@ -41,7 +42,7 @@ function Home() {
                                 <Route exact path='/home' element={<h1>Home</h1>} />
                                 {/* <Route exact path='/content' element={isSignedIn ? <Homepage /> : <SignIn />} /> */}
                                 {/* <Route path="/home" element={<h1>Home</h1>} /> */}
-                                <Route path="/alumni" element={<h1>Alumni</h1>} />
+                                <Route path='/Alumni' element={<Alumni/>} />
                                 <Route path="/event" element={<h1>Event Page</h1>} />
                                 <Route path="/post" element={<h1>Post Page</h1>} />
                                 <Route path="/developer-info" element={<h1>Developer Info</h1>} />
