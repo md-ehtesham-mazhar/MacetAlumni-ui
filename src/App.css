@@ -480,3 +480,32 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
+.event-page {
+  margin-left: 220px; /* Adjust according to sidebar width */
+  padding: 10px;
+}
+
+.event {
+  margin-bottom: 40px;
+}
+
+.event-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for two images */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
+  gap: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.event-image {
+  width: 96%;
+  height: 250px;
+}
+.event-grid img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
