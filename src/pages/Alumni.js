@@ -3,15 +3,15 @@ import React from "react";
 // ProfileCard Component
 const ProfileCard = ({ name, title, image, bio }) => {
   return (
-    <div className="profile-card">
+    <div className="alumni-card">
       <img
         src={image}
         alt={`${name}'s profile`}
-        className="profile-card-image"
+        className="alumni-card-image"
       />
-      <h2 className="profile-card-name">{name}</h2>
-      <p className="profile-card-title">{title}</p>
-      <p className="profile-card-bio">{bio}</p>
+      <h2 className="alumni-card-name">{name}</h2>
+      <p className="alumni-card-title">{title}</p>
+      <p className="alumni-card-bio">{bio}</p>
     </div>
   );
 };
@@ -59,7 +59,7 @@ const Alumni = () => {
   return (
     <div className="alumni-page">
       <h1>Our Distinguished Alumni</h1>
-      <div className="profile-container">
+      <div className="alumni-container">
         {alumniProfiles.map((alumni, index) => (
           <ProfileCard
             key={index}

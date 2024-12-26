@@ -13,7 +13,7 @@ const ProfilePage = () => {
           </div>
           <div className="profile-actions">
             <button className="btn-edit">Edit Profile</button>
-            <button className="btn-logout">Logout</button>
+            <button to="/" className="btn-logout">Logout</button>
           </div>
         </div>
         <div className="profile-details">

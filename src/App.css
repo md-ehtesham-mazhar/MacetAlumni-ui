@@ -1,20 +1,33 @@
-/* .home { */
-  /* background-image: url("images/img2.jpg");
-  background-position: center center;
-  background-size: max(1800px, 80vw);
-  background-repeat: no-repeat;
-  height: 644px;
-  position: relative;
-  opacity: 2; */
-
-/* } */
 .home {
   padding-top: 70px;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the home container takes full viewport height */
+  min-height: 100vh;
 }
 
+.container {
+  height: 100vh;
+  /* padding-right: 15px; */
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgb(218, 232, 245);
+  /* background-image: url('images/img2.jpg'); */
+  flex: 1; /* Makes the container stretch to take up all remaining space */
+  padding-top: 50px;
+}
+/* .container img{
+  width: 100%;
+  height: 100%;
+} */
+
+@media (min-width: 576px) {
+  .container {
+      max-width: 3000px;
+  }
+}
+
+/* Navbar */
 .navbar {
   background-color: rgb(10, 9, 40);
   display: flex;
@@ -92,8 +105,32 @@ border-radius: 2px;
 text-decoration: none;
 }
 
+/* Footer */
+.separation{
+  height: 0.4vh;
+  background-color: grey;
+}
+
+.footer {
+  /* height: 100px; */
+  text-align: center;
+  background-color: #010e1c;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+}
+
+.footer a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
 
 
+/* Signin */
 .signin-box {
   width: 350px;
   max-height: 350px;
@@ -177,72 +214,7 @@ text-decoration: none;
   align-items: center;
 }
 
-.container {
-  height: 100vh;
-  /* padding-right: 15px; */
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: rgb(218, 232, 245);
-  /* background-image: url('images/img2.jpg'); */
-  flex: 1; /* Makes the container stretch to take up all remaining space */
-}
-/* .container img{
-  width: 100%;
-  height: 100%;
-} */
-
-@media (min-width: 576px) {
-  .container {
-      max-width: 3000px;
-  }
-}
-
-
-/* .content {
-  font-weight: bolder;
-  background-color: rgba(212, 252, 210, 0.963);
-} */
-
-.separation{
-  height: 0.4vh;
-  background-color: grey;
-}
-
-.footer {
-  /* height: 100px; */
-  text-align: center;
-  background-color: #010e1c;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: white;
-}
-
-/* .contact-info {
-  background-color: #f8f9fa;
-} */
-
-/* .footerh3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-} */
-
-/* .contact-info .city-office,
-.contact-info .campus {
-  margin-bottom: 20px;
-} */
-
-
-.footer a {
-  color: yellow;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: none;
-}
-
-/* Profile Page CSS
+Profile Page CSS
 .profile-container {
   max-width: 1200px;
   margin: 20px auto;
@@ -265,15 +237,17 @@ text-decoration: none;
 .profile-content {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .profile-sidebar {
   width: 30%;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(10, 9, 40);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-left: 10px;
 }
 
 .profile-image img {
@@ -320,14 +294,15 @@ text-decoration: none;
 .profile-details {
   width: 65%;
   padding: 20px;
-  background-color: #fff;
+  background-color: rgb(10, 9, 40);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
 }
 
 .profile-details h2 {
   font-size: 28px;
-  color: #333;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -339,11 +314,11 @@ text-decoration: none;
 
 .profile-detail label {
   font-weight: bold;
-  color: #555;
+  color: #fff;
 }
 
 .profile-detail p {
-  color: #777;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -356,42 +331,9 @@ text-decoration: none;
     width: 100%;
     margin-bottom: 20px;
   }
-} */
-
-.homepage {
-  width: 100%;
-  background-color: black;
-  height: 100vh;
-  display: flex;
 }
 
-.slide {
-  padding: 8px;
-  max-width: 20vw;
-  min-width: 12vw;
-  /* justify-items: center; */
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-}
-.slide .element {
- text-decoration: none;
- color: white;
-}
-.slide .element:hover{
-  color:rgb(216, 137, 41);
-  border:0.7px solid rgb(216, 137, 41);
-  border-radius: 5px;
-}
-.area {
-  background-color: white;
-  padding: 8px;
-  /* width: 100%; */
-  flex-grow: 1;
-  overflow-y: auto;
-}
-/* src/components/ProfileCard.css */
+/* Alumni */
 .alumni-page {
   border: 1px solid rgb(168, 18, 18);
   background-color: white;
@@ -406,7 +348,7 @@ text-decoration: none;
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-.profile-container {
+.alumni-container {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); 3 cards per row */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -416,30 +358,19 @@ text-decoration: none;
 
 }
 
-/* @media (max-width: 768px) {
-  .profile-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
-  /* }
-} */
-
 @media (max-width: 480px) {
-  .profile-container {
+  .alumni-container {
     grid-template-columns: 1fr; /* 1 card per row on very small screens */
   }
 }
 
-/* @media (max-width: 768px) {
-  .profile-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-} */
 @media (max-width: 768px) {
-  .profile-container {
+  .alumni-container {
     grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
   }
 }
 
-.profile-card {
+.alumni-card {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
@@ -451,7 +382,7 @@ text-decoration: none;
   color: #ccc;
 }
 
-.profile-card-image {
+.alumni-card-image {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -459,20 +390,20 @@ text-decoration: none;
   margin-bottom: 10px;
 }
 
-.profile-card-name {
+.alumni-card-name {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 5px;
   color: #ccc;
 }
 
-.profile-card-title {
+.alumni-card-title {
   font-size: 1rem;
   margin-bottom: 10px;
   color: #ccc;
 }
 
-.profile-card-bio {
+.alumni-card-bio {
   font-size: 0.9rem;
   color: #ccc;
 }
@@ -480,6 +411,8 @@ text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
+
+/* Event */
 .event-page {
   margin-left: 220px; /* Adjust according to sidebar width */
   padding: 10px;

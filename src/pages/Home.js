@@ -5,6 +5,7 @@ import {Routes, Route } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Alumni from './Alumni';
 import EventPage from './EventPage';
+import ProfilePage from '../components/Profile';
 // import Profile from '../components/Profile';
 //import Homepage from './Homepage';
 //import Content from '../components/Content';
@@ -28,6 +29,7 @@ function Home() {
 
     return (
             <div className='home'>
+                
                 <Navbar isSignedIn={isSignedIn} handleSignInClick={handleSignInClick} />
 
                 <div className="container">
@@ -47,6 +49,7 @@ function Home() {
                                 <Route path="/event" element={<EventPage/>} />
                                 <Route path="/post" element={<h1>Post Page</h1>} />
                                 <Route path="/developer-info" element={<h1>Developer Info</h1>} />
+                                <Route path="/profile" element={<ProfilePage />} />
                             </>
                         )}
                     </Routes>
