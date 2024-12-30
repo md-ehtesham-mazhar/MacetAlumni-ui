@@ -1,6 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ProfilePage = () => {
+const ProfilePage = ({ onLogout }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Call onLogout to update the signed-in state in the parent component
+    onLogout();
+    // Navigate to the SignIn page
+    navigate('/signin');
+  };
+
   return (
     <div className="profile-container">
       <div className="profile-header">
@@ -13,7 +23,7 @@ const ProfilePage = () => {
           </div>
           <div className="profile-actions">
             <button className="btn-edit">Edit Profile</button>
-            <button to="/" className="btn-logout">Logout</button>
+            <button onClick={handleLogout} className="btn-logout">Log Out</button>
           </div>
         </div>
         <div className="profile-details">

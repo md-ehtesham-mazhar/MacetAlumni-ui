@@ -28,6 +28,7 @@
 }
 
 /* Navbar */
+/* Base styles */
 .navbar {
   background-color: rgb(10, 9, 40);
   display: flex;
@@ -45,26 +46,38 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  margin-right: 30px;
+}
+
+.logo-img {
+  width: 40px;
+  height: auto;
 }
 
 .logo {
-  position: relative;
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #a37070;
+  text-decoration: none;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
 }
 
-.navbar-brand {
-  margin-left: 1rem;
-  padding: 0px;
-  font-weight: bolder;
-  color: #a37070;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-}
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: white;
+}
+
+.nav-elements {
+  display: flex;
+  gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-right {
+  display: flex;
 }
 
 .btn {
@@ -77,33 +90,79 @@
   color: black;
 }
 
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.nav-elements {
-  display: flex;
-  gap: 80px;
-  margin-left: 50px;
-
-}
-
-.nav-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .element {
   text-decoration: none;
   color: whitesmoke;
 }
-.element:hover{
-color: wheat;
-border: 1px solid wheat;
-border-radius: 2px;
-text-decoration: none;
+
+.element:hover {
+  color: wheat;
+  border: 1px solid wheat;
+  border-radius: 2px;
+  text-decoration: none;
 }
+
+.nav-prof-img img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Hide links and show hamburger on smaller screens */
+  .nav-elements {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(10, 9, 40);
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .nav-elements.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .logo-img {
+    width: 30px;
+  }
+
+  .navbar-brand {
+    font-size: 12px;
+  }
+
+  .btn-profile {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width: 769px) {
+  /* Show links and hide hamburger on larger screens */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-elements {
+    display: flex;
+  }
+}
+
 
 /* Footer */
 .separation{
