@@ -473,8 +473,8 @@ Profile Page CSS
 
 /* Event */
 .event-page {
-  margin-left: 220px; /* Adjust according to sidebar width */
-  padding: 10px;
+  margin-left: 20px; /* Adjust according to sidebar width */
+  padding: 20px;
 }
 
 .event {
@@ -483,10 +483,10 @@ Profile Page CSS
 
 .event-images-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns for two images */
-  grid-template-columns: repeat(auto-fill, minmax(350px, 3fr));
-  gap: 1px;
-  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr; /* Two columns for two images */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5px;
+  margin-top: 10px;
   margin-bottom: 20px;
   object-fit: cover;
 }
@@ -494,7 +494,15 @@ Profile Page CSS
 .event-image {
   width: 96%;
   height: 250px;
+  border-radius: 5px;
 }
+
+@media (max-width: 600px) {
+.event-images-grid {
+  grid-template-columns: 1fr;
+}
+}
+
 .event-grid img {
   width: 100%; 
   height: 100%; 
