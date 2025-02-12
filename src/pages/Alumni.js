@@ -20,25 +20,25 @@ const Alumni = () => {
   const alumniProfiles = [
     {
       name: "Ehtesham Watson",
-      title: "Berozgar (working at home)",
+      title: "(working at home)",
       image: "https://via.placeholder.com/100",
       bio: "Graduated in 2015 with a focus on web technologies.",
     },
     {
       name: "Michael Arzaaa",
-      title: "Same as Mrs Watson",
+      title: "working",
       image: "https://via.placeholder.com/100",
       bio: "Graduated in 2018, specializing in data analytics.",
     },
     {
       name: "Sophia Shehzeb",
-      title: "Professional BLOW-JOBer ",
+      title: "Professional ",
       image: "https://via.placeholder.com/100",
       bio: "Graduated in 2020, with a passion for user experience design.",
     },
     {
       name: "Mohammad Sahil",
-      title: "Product Manager at Meta",
+      title: "Product Manager",
       image: "https://via.placeholder.com/100",
       bio: "Graduated in 2016, excelling in project management.",
     },
@@ -53,6 +53,89 @@ const Alumni = () => {
       title: "Blockchain Developer at Ripple",
       image: "https://via.placeholder.com/100",
       bio: "Graduated in 2019, with expertise in blockchain technology.",
+    },
+    {
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },
+    {
+      name: "John Dog",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },
+    {
+      name: "John Dov",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
+    },{
+      name: "John Doe",
+      title: "AI Researcher at OpenAI",
+      image: "https://via.placeholder.com/100",
+      bio: "Graduated in 2017, specializing in artificial intelligence.",
     },
   ];
 

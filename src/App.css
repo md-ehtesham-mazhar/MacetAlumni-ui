@@ -8,15 +8,18 @@
 .container {
   height: 100vh;
   /* padding-right: 15px; */
-  width: 100%;
+  width: 100vw;
   padding-left: 0;
   padding-right: 0;
   background-color: rgb(218, 232, 245);
-  /* background-image: url('images/img2.jpg'); */
+  background-size: cover;
+  background-position: center; 
+  justify-content: center;
+  background-image: url('images/img2.jpg'); 
   flex: 1; /* Makes the container stretch to take up all remaining space */
   padding-top: 50px;
 }
-/* .container img{
+/*.container img{
   width: 100%;
   height: 100%;
 } */
@@ -172,6 +175,7 @@
 
 .footer {
   /* height: 100px; */
+
   text-align: center;
   background-color: #010e1c;
   padding-bottom: 10px;
@@ -368,6 +372,7 @@ Profile Page CSS
 .profile-detail {
   display: flex;
   justify-content: space-between;
+  
   margin-bottom: 15px;
 }
 
@@ -379,18 +384,19 @@ Profile Page CSS
 .profile-detail p {
   color: #fff;
 }
-
-@media screen and (max-width: 768px) {
+ 
+ @media screen and (max-width: 768px) {
   .profile-content {
     flex-direction: column;
     align-items: center;
-  }
+  }  
+}
 
   .profile-sidebar, .profile-details {
     width: 100%;
     margin-bottom: 20px;
   }
-}
+
 
 /* Alumni */
 .alumni-page {
@@ -473,14 +479,15 @@ Profile Page CSS
 
 /* Event */
 .event-page {
-  margin-left: 20px; /* Adjust according to sidebar width */
-  padding: 20px;
+  background-color:white;
+   
+  margin-left: 2px; /* Adjust according to sidebar width */
+  padding: 5px;
 }
 
 .event {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
 .event-images-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Two columns for two images */
@@ -497,7 +504,8 @@ Profile Page CSS
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) 
+{
 .event-images-grid {
   grid-template-columns: 1fr;
 }
@@ -509,3 +517,4 @@ Profile Page CSS
   object-fit: cover; 
   border-radius: 10px; 
 }
+/* Slideshow Container */

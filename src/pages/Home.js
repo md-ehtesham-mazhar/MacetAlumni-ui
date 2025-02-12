@@ -7,6 +7,7 @@ import Alumni from './Alumni';
 import EventPage from './EventPage';
 import ProfilePage from '../components/Profile';
 
+
 function Home() {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
@@ -25,6 +26,9 @@ function Home() {
   return (
     <div className='home'>
       <Navbar isSignedIn={isSignedIn} handleSignInClick={handleSignInClick} />
+      
+       {/* Add the ImageCarousel component here */}
+      
 
       <div className="container">
         <Routes>
@@ -34,7 +38,7 @@ function Home() {
 
           {isSignedIn && (
             <>
-              <Route exact path='/home' element={<h1>Home</h1>} />
+              <Route exact path='/home' element={<h1></h1>} />
               <Route path='/Alumni' element={<Alumni />} />
               <Route path="/event" element={<EventPage />} />
               <Route path="/post" element={<h1>Post Page</h1>} />
